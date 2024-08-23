@@ -37,7 +37,7 @@
       }
     </script> -->
   </head>
-  <body class="monrope">
+  <body class="monrope bg-[#F4F4F4]">
     <!-- <svg width="32.010620" height="32.010742" viewBox="0 0 32.0106 32.0107" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <defs/>
         <rect id="arrow-up-right-01" rx="15.499997" width="30.999994" height="31.000031" transform="translate(0.510620 0.500000) rotate(0.019056)" fill="#ABEF5F" fill-opacity="1.000000"/>
@@ -50,12 +50,20 @@
         <path id="Vector" d="M21 11L10 22" stroke="white" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
         <path id="Vector" d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17" stroke="white" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
     </svg> -->
-    <!-- bg-gradient-to-b from-[rgb(255, 255, 255)] to-[rgba(255, 255, 255, 0)] -->
+    <!-- bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF] -->
+     <!-- <svg width="17.747192" height="16.970703" viewBox="0 0 17.7472 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <desc>
+            Created with Pixso.
+        </desc>
+        <defs/>
+        <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+        <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+      </svg> -->
 
-    <header class="">
+    <header class="bg-gradient-to-b from-[#F4F4F4] to-[#FFFFFF]">
       <!-- navbar -->
-      <nav class="lg:max-w-[82%] lg:mt-7 mx-auto">
-        <div class="navbar bg-base-100">
+      <nav class="lg:max-w-[82%] lg:pt-8 mx-auto">
+        <div class="navbar">
           <div class="navbar-start">
             <div class="dropdown lg:hidden">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -252,7 +260,7 @@
               />
             </svg>
 
-            <a class="btn bg-[#ABEF5F] rounded-[2rem] hover:bg-[#ABE35F]"
+            <a class="btn bg-[#ABEF5F] rounded-[2rem] hover:bg-[#ABE35F] px-5 text-lg font-bold"
               >Book Consult
               <svg
                 width="32.010620"
@@ -296,7 +304,7 @@
       </nav>
 
       <!-- hero section -->
-      <div class="lg:max-w-[82%] lg:mt-7 mx-auto lg:mb-[7rem] text-center">
+      <div class="lg:max-w-[82%] lg:mt-7 mx-auto lg:pb-[7rem] text-center">
         <img
           src="assets/banner.png"
           alt="banner"
@@ -310,7 +318,7 @@
           sophistication, featuring weathered wood, sleek metal accents, and
           large windows that flood the space with natural light.
         </p>
-        <a class="btn bg-[#ABEF5F80] rounded-[2rem] hover:border-[#7cad38] hover:bg-[#ABEF5F80] border-[#ABEF5F]"
+        <a class="btn bg-[#ABEF5F80] rounded-[2rem] hover:border-[#7cad38] hover:bg-[#ABEF5F80] border-[#ABEF5F] px-5 text-lg font-bold"
           >View Details
           <svg
             width="32.010620"
@@ -352,7 +360,46 @@
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <!-- About Us section -->
+      <div class="flex px-[9%] py-24 justify-between relative" id="about-us">
+        <img class="absolute top-[5.5%] left-[6%]" src="assets/Vector.png" alt="arrow">
+        <div class="max-w-[48%]">
+          <a href="#about-us" class="btn bg-white  px-4 py-2 mb-4 text-[#494949] font-bold rounded-3xl transition-all duration-300 hover:bg-[#ececec]">
+            <svg class="inline mr-2" width="17.747192" height="16.970703" viewBox="0 0 17.7472 16.9707" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <desc>
+                  Created with Pixso.
+              </desc>
+              <defs/>
+              <path id="Vector" d="M16.3 8.48L0.75 8.48" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+              <path id="Vector" d="M12.67 3.62C12.67 3.62 16.99 7.27 16.99 8.48C16.99 9.69 12.67 13.34 12.67 13.34" stroke="#494949" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+            </svg>
+            About Us
+          </a>
+          <h1 class="text-[2.5rem] font-bold leading-[3.5rem] text-[#212121] mb-6">We design thoughtful, <br>liveable spaces</h1>
+          <p class="text-[#494949] font-medium mb-6">The barn house captivates with its blend of rustic charm and 
+            modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <div class="p-6 bg-white mb-6 flex gap-6 rounded-2xl">
+            <img src="assets/commercial.png" alt="commercial" class="max-w-16">
+            <div>
+              <h2 class="text-[1.3rem] font-bold text-[#494949]">Commercial</h2>
+            <p class="text-[#737373] font-medium">The barn house captivates with its blend <br>of rustic charm and modern.</p>
+            </div>
+          </div>
+          <div class="p-6 bg-white flex gap-6 rounded-2xl">
+            <img src="assets/residential.png" alt="residential" class="max-w-16">
+            <div>
+              <h2>Residential</h2>
+            <p class="text-[#737373] font-medium">The barn house captivates with its blend <br>of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+        <div class="max-w-[48%]">
+          <img src="assets/Rectangle.png" alt="building">
+        </div>
+      </div>
+      
+    </main>
 
     <footer></footer>
   </body>
