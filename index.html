@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rinterio</title>
+
+    <!-- monrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
+
+    <!-- tailwind+daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: '#da373d',
+            }
+          }
+        }
+      }
+    </script> -->
+  </head>
+  <body class="monrope">
+    <!-- <svg width="32.010620" height="32.010742" viewBox="0 0 32.0106 32.0107" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs/>
+        <rect id="arrow-up-right-01" rx="15.499997" width="30.999994" height="31.000031" transform="translate(0.510620 0.500000) rotate(0.019056)" fill="#ABEF5F" fill-opacity="1.000000"/>
+        <path id="Vector" d="M21 11L10 22" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+        <path id="Vector" d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17" stroke="#1C1C1C" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg>
+    <svg width="32.010620" height="32.010742" viewBox="0 0 32.0106 32.0107" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs/>
+        <rect id="arrow-up-right-01" rx="15.499997" width="30.999994" height="31.000031" transform="translate(0.510620 0.500000) rotate(0.019056)" fill="black" fill-opacity="1.000000"/>
+        <path id="Vector" d="M21 11L10 22" stroke="white" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linecap="round"/>
+        <path id="Vector" d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17" stroke="white" stroke-opacity="1.000000" stroke-width="1.500000" stroke-linejoin="round" stroke-linecap="round"/>
+    </svg> -->
+    <!-- bg-gradient-to-b from-[rgb(255, 255, 255)] to-[rgba(255, 255, 255, 0)] -->
+
+    <header class=""> 
+      <!-- navbar -->
+      <nav class="lg:max-w-[82%] lg:mt-7 mx-auto">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown lg:hidden">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <svg
+              width="32.010620"
+              height="32.010742"
+              viewBox="0 0 32.0106 32.0107"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <defs />
+              <rect
+                id="arrow-up-right-01"
+                rx="15.499997"
+                width="30.999994"
+                height="31.000031"
+                transform="translate(0.510620 0.500000) rotate(0.019056)"
+                fill="#ABEF5F"
+                fill-opacity="1.000000"
+              />
+              <path
+                id="Vector"
+                d="M21 11L10 22"
+                stroke="#1C1C1C"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17"
+                stroke="#1C1C1C"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+            </svg>
+            <a class="text-[2rem] font-extrabold ml-2">Rinterio</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#737373]">
+              <li><a class="font-bold text-black">Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blogs</a></li>
+              <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <svg
+              class="mr-4"
+              width="48"
+              height="48"
+              viewBox="0 0 48.016 48.0161"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <rect
+                id="Frame 2"
+                rx="23.500000"
+                width="47.000000"
+                height="47.000000"
+                transform="translate(0.515991 0.500000) rotate(0.019056)"
+                fill="#FFFFFF"
+                fill-opacity="1.000000"
+              />
+              <path
+                id="Vector"
+                d="M29.5 29.5L34 34.01"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M23.01 14C18.04 14 14.01 18.03 14 23C14 27.97 18.03 32 23 32C27.97 32 32 27.98 32 23.01C32 18.04 27.98 14 23.01 14Z"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+              />
+              <rect
+                id="Frame 2"
+                rx="23.500000"
+                width="47.000000"
+                height="47.000000"
+                transform="translate(0.515991 0.500000) rotate(0.019056)"
+                stroke="#E9E9E9"
+                stroke-opacity="1.000000"
+                stroke-width="1.000000"
+              />
+            </svg>
+            <svg
+              class="mr-4"
+              width="48.015961"
+              height="48.016113"
+              viewBox="0 0 48.016 48.0161"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs />
+              <rect
+                id="Frame 3"
+                rx="23.500000"
+                width="47.000000"
+                height="47.000000"
+                transform="translate(0.515961 0.500000) rotate(0.019056)"
+                fill="#FFFFFF"
+                fill-opacity="1.000000"
+              />
+              <path
+                id="Vector"
+                d="M20 28L27.26 28C31.75 28.01 32.44 25.19 33.26 21.08C33.5 19.89 33.62 19.3 33.34 18.9C33.05 18.51 32.5 18.51 31.4 18.51L18 18.5"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M20 28L17.38 15.52C17.16 14.63 16.36 14 15.44 14L14.51 14"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M20.88 28L20.47 28C19.11 28 18 29.15 18 30.57C18 30.81 18.18 31 18.41 31L29.5 31"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+                stroke-linejoin="round"
+                stroke-linecap="round"
+              />
+              <path
+                id="Vector"
+                d="M22.5 34C21.67 34 21 33.33 21 32.5C21 31.67 21.67 31 22.5 31C23.33 31 24 31.67 24 32.5C24 33.33 23.33 34 22.5 34Z"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+              />
+              <path
+                id="Vector"
+                d="M29.5 34C28.67 34 28 33.33 28 32.5C28 31.68 28.67 31 29.5 31C30.33 31.01 31 31.68 31 32.51C31 33.33 30.33 34.01 29.5 34Z"
+                stroke="#737373"
+                stroke-opacity="1.000000"
+                stroke-width="1.500000"
+              />
+              <rect
+                id="Frame 3"
+                rx="23.500000"
+                width="47.000000"
+                height="47.000000"
+                transform="translate(0.515961 0.500000) rotate(0.019056)"
+                stroke="#E9E9E9"
+                stroke-opacity="1.000000"
+                stroke-width="1.000000"
+              />
+            </svg>
+
+            <a class="btn bg-[#ABEF5F] rounded-[2rem] hover:bg-[#ABE35F]"
+              >Book Consult
+              <svg
+                width="32.010620"
+                height="32.010742"
+                viewBox="0 0 32.0106 32.0107"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <defs />
+                <rect
+                  id="arrow-up-right-01"
+                  rx="15.499997"
+                  width="30.999994"
+                  height="31.000031"
+                  transform="translate(0.510620 0.500000) rotate(0.019056)"
+                  fill="black"
+                  fill-opacity="1.000000"
+                />
+                <path
+                  id="Vector"
+                  d="M21 11L10 22"
+                  stroke="white"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M15 10.13C15 10.13 20.64 9.66 21.49 10.51C22.35 11.37 21.87 17 21.87 17"
+                  stroke="white"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.500000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+  </body>
+</html>
